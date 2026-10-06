@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Juan David Lopez | Portafolio</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script src="./js/app.js"></script>
+
+</head>
+
+<body class="bg-slate-100 text-slate-800">
+
+    <!-- MENÚ -->
+    <header class="bg-blue-950 text-white p-4">
+
+        <nav class="max-w-5xl mx-auto flex justify-between items-center">
+
+            <h1 class="text-xl font-bold">
+                JD <span class="text-cyan-400">Lopez</span>
+            </h1>
+
+            <button id="btn-menu" class="md:hidden text-2xl">
+                ☰
+            </button>
+
+            <ul id="menu" class="hidden md:flex gap-6">
+
+                <li>
+                    <a href="#inicio" class="hover:text-cyan-400">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#sobre-mi" class="hover:text-cyan-400">
+                        Sobre mí
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#habilidades" class="hover:text-cyan-400">
+                        Habilidades
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#proyectos" class="hover:text-cyan-400">
+                        Proyectos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contacto" class="hover:text-cyan-400">
+                        Contacto
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- INICIO -->
+    <section id="inicio" class="bg-blue-950 text-white py-24 px-6">
+
+        <div class="max-w-5xl mx-auto">
+
+            <p class="text-cyan-400 font-bold">
+                HOLA, SOY
+            </p>
+
+            <h2 class="text-5xl font-bold mt-3">
+                Juan David Lopez
+            </h2>
+
+            <h3 class="text-2xl mt-3 text-slate-300">
+                Estudiante de Ingeniería de Sistemas
+            </h3>
+
+            <p class="mt-5 max-w-xl text-slate-400">
+                Me interesa la programación, el desarrollo web y
+                aprender nuevas tecnologías para crear soluciones.
+            </p>
+
+            <a href="#proyectos"
+                class="inline-block mt-6 bg-cyan-400 text-blue-950
+                px-5 py-3 rounded-lg font-bold hover:bg-cyan-300">
+                Ver proyectos
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- SOBRE MI -->
+    <section id="sobre-mi" class="py-20 px-6 bg-white">
+
+        <div class="max-w-5xl mx-auto">
+
+            <h2 class="text-3xl font-bold text-blue-950">
+                Sobre mí
+            </h2>
+
+            <p class="mt-5 text-slate-600 max-w-2xl">
+                Soy estudiante de Ingeniería de Sistemas y actualmente
+                estoy fortaleciendo mis conocimientos en programación,
+                desarrollo web y bases de datos.
+            </p>
+
+            <p class="mt-4 text-slate-600 max-w-2xl">
+                Me gusta aprender y mejorar mis habilidades mediante
+                diferentes trabajos y proyectos académicos.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="py-20 px-6 bg-slate-100">
+
+        <div class="max-w-5xl mx-auto">
+
+            <h2 class="text-3xl font-bold text-blue-950">
+                Habilidades
+            </h2>
+
+            <div class="flex flex-wrap gap-3 mt-6">
+
+                <span class="bg-blue-950 text-white px-4 py-2 rounded-lg">
+                    HTML
+                </span>
+
+                <span class="bg-blue-950 text-white px-4 py-2 rounded-lg">
+                    CSS
+                </span>
+
+                <span class="bg-blue-950 text-white px-4 py-2 rounded-lg">
+                    JavaScript
+                </span>
+
+                <span class="bg-blue-950 text-white px-4 py-2 rounded-lg">
+                    Java
+                </span>
+
+                <span class="bg-blue-950 text-white px-4 py-2 rounded-lg">
+                    Python
+                </span>
+
+                <span class="bg-blue-950 text-white px-4 py-2 rounded-lg">
+                    SQL
+                </span>
+
+                <span class="bg-blue-950 text-white px-4 py-2 rounded-lg">
+                    Git
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="py-20 px-6 bg-white">
+
+        <div class="max-w-5xl mx-auto">
+
+            <h2 class="text-3xl font-bold text-blue-950">
+                Proyectos académicos
+            </h2>
+
+            <!-- FILTROS -->
+            <div class="flex flex-wrap gap-3 mt-6">
+
+                <button data-filter="todos"
+                    class="bg-blue-950 text-white px-4 py-2 rounded-lg">
+                    Todos
+                </button>
+
+                <button data-filter="web"
+                    class="bg-slate-200 px-4 py-2 rounded-lg">
+                    Web
+                </button>
+
+                <button data-filter="programacion"
+                    class="bg-slate-200 px-4 py-2 rounded-lg">
+                    Programación
+                </button>
+
+                <button data-filter="bases"
+                    class="bg-slate-200 px-4 py-2 rounded-lg">
+                    Bases de datos
+                </button>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-3 gap-5 mt-8">
+
+                <article data-category="web"
+                    class="bg-slate-100 p-6 rounded-xl">
+
+                    <h3 class="text-xl font-bold text-blue-950">
+                        Desarrollo Web
+                    </h3>
+
+                    <p class="mt-3 text-slate-600">
+                        Trabajos realizados utilizando HTML, CSS,
+                        JavaScript y diseño responsive.
+                    </p>
+
+                </article>
+
+
+                <article data-category="programacion"
+                    class="bg-slate-100 p-6 rounded-xl">
+
+                    <h3 class="text-xl font-bold text-blue-950">
+                        Programación
+                    </h3>
+
+                    <p class="mt-3 text-slate-600">
+                        Ejercicios y proyectos académicos para
+                        practicar programación y lógica.
+                    </p>
+
+                </article>
+
+
+                <article data-category="bases"
+                    class="bg-slate-100 p-6 rounded-xl">
+
+                    <h3 class="text-xl font-bold text-blue-950">
+                        Bases de datos
+                    </h3>
+
+                    <p class="mt-3 text-slate-600">
+                        Trabajos relacionados con SQL y modelado
+                        de bases de datos.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-20 px-6 bg-cyan-400">
+
+        <div class="max-w-5xl mx-auto">
+
+            <h2 class="text-3xl font-bold text-blue-950">
+                Contacto
+            </h2>
+
+            <p class="mt-4 text-blue-950">
+                Puedes contactarme mediante mi correo institucional.
+            </p>
+
+            <a href="mailto:jdlopez-2024b@corhuila.edu.co"
+                class="block mt-4 font-bold text-blue-950">
+                jdlopez-2024b@corhuila.edu.co
+            </a>
+
+            <a href="https://github.com/Jd-lopezcardenas"
+                target="_blank"
+                class="inline-block mt-4 bg-blue-950 text-white
+                px-5 py-2 rounded-lg">
+                Mi GitHub
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-blue-950 text-white text-center p-5">
+
+        <p>
+            © <span id="anio"></span> Juan David Lopez
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
